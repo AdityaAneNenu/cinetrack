@@ -35,7 +35,7 @@ A simple and responsive movie discovery app built with React and Vite.
 1. Install dependencies:
    npm install
 2. Create a `.env` file in the project root:
-   VITE_TMDB_BEARER_TOKEN=your_tmdb_bearer_token_here
+   VITE_TMDB_API_KEY=your_tmdb_bearer_token_here
 3. Start the app:
    npm run dev
 
@@ -57,5 +57,5 @@ A simple and responsive movie discovery app built with React and Vite.
 
 You can deploy this project using Vercel or Netlify.
 
-- For Vercel: import repository and set `VITE_TMDB_BEARER_TOKEN` in project environment variables.
+- For Vercel: import repository and set `VITE_TMDB_API_KEY` in project environment variables.
 - For Netlify: set build command as `npm run build` and publish directory as `dist`.

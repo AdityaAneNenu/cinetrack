@@ -2,13 +2,10 @@ const BASE_URL = "https://api.themoviedb.org/3";
 const IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 
 function getAuthToken() {
-  const token =
-    (import.meta.env.VITE_TMDB_BEARER_TOKEN || import.meta.env.VITE_TMDB_API_KEY || "").trim();
+  const token = (import.meta.env.VITE_TMDB_API_KEY || "").trim();
 
   if (!token) {
-    throw new Error(
-      "Missing TMDB token. Add VITE_TMDB_BEARER_TOKEN in .env"
-    );
+    throw new Error("Missing TMDB token. Add VITE_TMDB_API_KEY in .env");
   }
 
   return token.replace(/^Bearer\s+/i, "");
