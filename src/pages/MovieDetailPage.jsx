@@ -70,6 +70,7 @@ function MovieDetailPage() {
           <h1>{movie.title}</h1>
           <p className="detail-muted">Year: {movie.year}</p>
           <p className="detail-muted">Rating: {movie.rating.toFixed(1)} / 10</p>
+          <p className="detail-muted">Votes: {movie.voteCount}</p>
           <p className="detail-muted">
             Genre: {movie.genres.length > 0 ? movie.genres.join(", ") : "N/A"}
           </p>

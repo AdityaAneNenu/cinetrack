@@ -25,6 +25,7 @@ function mapMovie(movie) {
     year: movie.release_date ? movie.release_date.slice(0, 4) : "N/A",
     poster: movie.poster_path ? `${IMAGE_BASE}${movie.poster_path}` : "",
     rating: movie.vote_average || 0,
+    voteCount: movie.vote_count || 0,
     overview: movie.overview || "No description available.",
     genres: movie.genres ? movie.genres.map((g) => g.name) : []
   };

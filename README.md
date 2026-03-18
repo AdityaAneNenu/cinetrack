@@ -35,9 +35,11 @@ A simple and responsive movie discovery app built with React and Vite.
 1. Install dependencies:
    npm install
 2. Create a `.env` file in the project root:
-   VITE_TMDB_API_KEY=your_tmdb_bearer_token_here
+   VITE_TMDB_API_KEY=your_tmdb_v4_bearer_token_here
 3. Start the app:
-   npm run dev
+   npm start
+
+Note: This Vite project also supports `npm run dev`.
 
 ## Build
 
@@ -62,7 +64,7 @@ Live URL: https://cinetrack-pi.vercel.app/
 1. Push the project to GitHub.
 2. Import the repository in Vercel.
 3. In Vercel Project Settings -> Environment Variables, add:
-   VITE_TMDB_API_KEY=your_tmdb_bearer_token_here
+   VITE_TMDB_API_KEY=your_tmdb_v4_bearer_token_here
 4. Deploy the project.
 
 Vercel auto-detects Vite settings. If needed, use:
